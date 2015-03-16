@@ -8,8 +8,7 @@ require('./jquery.csv.js');
 
 var fs = require('fs')
 
-jsonObj = fs.readFileSync("out.json")
-JSON.parse(jsonObj)
+jsonObj = JSON.parse(fs.readFileSync("big.json"))
 console.log("Converting...")
 doCSV(jsonObj)
 
